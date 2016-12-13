@@ -47,7 +47,7 @@ case class Vector[N <: Nat, +T](toList: List[T]) {
   def at[K <: Nat]: T = ???
 
   override def toString: String =
-    s"Vector[${toList.size}](${toList.mkString(", ")})"
+    s"Vector[_${toList.size}](${toList.mkString(", ")})"
 }
 
 object VNil extends Vector[_0, Nothing](Nil)
